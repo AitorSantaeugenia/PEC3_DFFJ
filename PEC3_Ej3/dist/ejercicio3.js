@@ -1,59 +1,47 @@
+"use strict";
 // Sustituye /***/ por las instrucciones adecuadas que cumplan las operaciones 
 // y salidas indicadas en los comentarios.
-
-abstract class Animal {
-    static population: number = 0;
+class Animal {
     constructor() {
         Animal.population++;
     }
-    public abstract sound(): void;
 }
-
+Animal.population = 0;
 class Dog extends Animal {
-    color: string;
-
-    constructor(color: string) {
+    constructor(color) {
         super();
         this.color = color;
     }
-
-    public sound(): void {
+    sound() {
         console.log('WOW');
     }
-
-    public iamadog() {
+    iamadog() {
         console.log('yes, this is a dog');
     }
 }
-
 class Cat extends Animal {
-    gender: string;
-    
-    constructor(gender: string) {
+    constructor(gender) {
         super();
         this.gender = gender;
     }
-
-    public sound(): void {
+    sound() {
         console.log('MEOW');
     }
-
-    public iamacat() {
+    iamacat() {
         console.log('yes, this is a cat');
     }
 }
-
-let animals: Animal[] = [];
+let animals = [];
 animals.push(new Cat('male'));
 animals.push(new Dog('white'));
 animals.push(new Cat('female'));
 animals.push(new Dog('black'));
-
-for(let animal of animals){
+for (let animal of animals) {
     animal.sound();
     if (animal instanceof Cat) {
         animal.iamacat();
-    } else if (animal instanceof Dog) {
+    }
+    else if (animal instanceof Dog) {
         animal.iamadog();
     }
 }
@@ -67,5 +55,4 @@ yes, this is a cat
 WOW
 yes, this is a dog
 */
-
 console.log(Animal.population); //4
