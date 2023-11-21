@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require('path');
 
 module.exports = {
@@ -17,6 +18,14 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+        title: 'pec4', 
+        template: 'index.html' }) 
+   ],
+  stats: {
+    children: true
   },
   devServer: {
     static: path.join(__dirname, "dist"),
