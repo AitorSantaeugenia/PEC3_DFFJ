@@ -1,0 +1,16 @@
+  {
+    "compilerOptions": {
+      /* Basic Options */
+      "target": "es2015",                   // La versió de JavaScript que ha de compilar, en aquest cas ECMAScript 2015
+      "module": "commonjs",                 // Mòduls a carregar per a poder emprar
+      "outDir": "./dist",                   // Carpeta on es genera la sortida dels arxius compilats a JavaScript
+      "rootDir": "./src",                   // Carpeta on està el projecte, on es troba, el directori arrel, s'especifica ja que TypeScript cercarà arxius TS en aquesta carpeta i els subdirectoris
+      "strict": true,                       // Mode estricte per a la comprovació d'errors durant el desenvolupament de la compilació
+      "incremental": true,                  // Que la compilació sigui incremental, es a dir, que guardi informació dels canvis sobre l'anterior compilació
+      "tsBuildInfoFile": "./buildcache",    // Informació cache, relacionat amb el punt anterior, on s'ha de guardar l'informació incremental
+    },
+    "include": [
+      "src/**/*.ts"
+    ]
+  }
+  
