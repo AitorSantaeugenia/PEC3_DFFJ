@@ -1,3 +1,5 @@
+### Per llegir el README de la PAC -> [README_PEC3_Ex4.md](https://github.com/AitorSantaeugenia/PEC3_DFFJ/blob/main/PEC3_Ej4/README_PEC3_Ex4.md)
+
 # 🔱 MVC.js
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
