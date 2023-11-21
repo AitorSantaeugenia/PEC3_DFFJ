@@ -1,0 +1,1 @@
+(()=>{"use strict";new TodoController(new TodoService,new TodoView)})();
