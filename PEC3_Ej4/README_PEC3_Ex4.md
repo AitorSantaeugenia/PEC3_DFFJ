@@ -5,6 +5,7 @@
 tsc
 ```
 - Al no voler instal·lar altres dependències externes, per valorar si funcionava o no, hem emprat <ins>*live server*</ins> de **Visual Studio Code* amb el *index.html*, on aquest apuntava als arxius transpilats dins del directori *./dist*, asegurant així que faci la feina amb els arxius transpilats a JavaScript.
+- Sobre l'exercici, cal dir que les vistes han estat les més complicades de crear, ja que hi havia que recercar més informació que no es tenía a mà en el moment, tot i a qué l'exemple proporcionat en el temari ha estat de gran ajuda.
 
 ### Configuració de Webpack
 
